@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <title>My portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+   @keyframes fadeInRight {
+      0% {
+          opacity: 0;
+          transform: translateX(50px);
+      }
+      100% {
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
+
+  /* Additional Animation for the profile image */
+  @keyframes scaleIn {
+      0% {
+          transform: scale(1.1);
+      }
+      100% {
+          transform: scale(1);
+      }
+  }
+
+  /* Apply animation to the profile image */
+  #profile-img {
+      animation: scaleIn 0.5s ease-out;
+  }
+</style>
+</head>
+<body style="background-color: black;">
+  <div class="container-fluid">
+    <div class="row" style="padding-right: 100px;">
+     
+    <div class="demo">
+        <ul>
+            <a href="#Home"><li>Home</li></a>
+            <a href="#About"><li>About</li></a>
+            <a href="#Skills"><li>Skills</li></a>
+            <a href="#Portfolio"><li>portfolio</li></a>
+            <a href="#Contact"><li>Contact</li></a>
+            </ul>
+            
+            
+            
+          </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  <div id="Home" style="padding: 5%;">
+    <div class="Home" style="color: white;">
+        <div class="row">
+            <div class="col-sm-6" style="height: 700px; padding-top: 20%; padding-left: 10%; animation: slideInLeft 1s ease-in-out;">
+                <h1 style="margin-left: 100px;">I'm SIRISHA</h1>
+                <h1 style="margin-left: 100px; color: yellow;">UI/UX <br>Developer & </br>Designer</h1>
+                <center><button class="btn" style="background-color: bisque; color: blue;" onclick="CVDownload">CV Download</button></center>
+            </div>
+            <div class="col-sm-6" style="padding-top: 13%; animation: slideInRight 1s ease-in-out;">
+                <img style="height: 300px; margin-left: 200px;" src="images/girl.png" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="About" style="padding: 5%;">
+  <div class="about">
+      <div class="row">
+          <div class="col-sm-6" style="height: 500px; overflow: hidden;">
+              <img id="profile-img" style="height: 500px; transform: scale(1.1);" src="images/cute.png" />
+          </div>
+          <div class="col-sm-6" style="animation: fadeInRight 1s ease-out;">
+              <h1>About</h1>
+              <p style="color: yellow;">GONDLU SIRISHA</p>
+              <p style="color: yellow;">Birthday: 03/10/2003</p>
+              <p style="color: yellow;">Age: 20</p>
+              <p style="color: yellow;">College: BVK Degree College</p>
+              <p style="color: yellow;">Nationality: Hindu</p>
+              <p style="color: yellow;">Email: sirishagondlu2003@gmail.com</p>
+              <p style="color: yellow;">Phone: 8464894195</p>
+              <p style="color: yellow;">Address: Vizag</p>
+
+              <div class="tab-titles">
+                  <p style="color: pink;" class="tab-links" onclick="edg()">Education</p>
+                  <p style="color: pink;" class="tab-links" onclick="cert()">Certificates</p>
+              </div>
+              <div class="tab-contents" id="Education">
+                  <ul style="padding-right: 20px;">
+                      <li><span>2018-2019</span><br>10<sup>th</sup> Sri Chaitanya School, Visakhapatnam</li>
+                      <li><span>2019-2021</span><br>Intermediate at Sri Chaitanya Jr. College, Visakhapatnam</li>
+                      <li><span>2021-2024</span><br>BSc Computer Science at BVK Degree College, Visakhapatnam</li>
+                  </ul>
+              </div>
+              <div class="tab-contents" id="Certificates" style="display: none;">
+                  <ul>
+                      <li>Certified as UI/UX Developer at Tech Mahindra SMART Academy, Visakhapatnam</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  
+
+
+<script>
+  function cert() {
+      document.getElementById("Certificates").style.display = "block";
+      document.getElementById("Education").style.display = "none";
+  }
+
+  function edg() {
+      document.getElementById("Certificates").style.display = "none";
+      document.getElementById("Education").style.display = "block";
+  }
+</script>
+
+
+      <div id="Skills" style="height: 800px; padding: 5%; ">
+        <center> <h1>Skills</h1></center>
+        <center> <p>Front-end</p></center>
+        <div class="skill">
+         
+        <div class="container ski col-md-6">
+          <h1>Developing skills</h1>
+          <div class="skill-box">
+            <span class="title">HTML</span>
+            <div class="skill-bar">
+              <span class="skill-per html">
+                <span class="tool">80%</span>
+           </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">css</span>
+            <div class="skill-bar">
+              <span class="skill-per css">
+                <span class="tool">70%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">bootstrap</span>
+            <div class="skill-bar">
+              <span class="skill-per bootstrap">
+                <span class="tool">75%</span>
+              </span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <span class="title">javascript</span>
+            <div class="skill-bar">
+              <span class="skill-per javascript">
+                <span class="tool">80%</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="container ski col-md-6">
+          <h1>Designing skills</h1>
+          <div class="skill-box">
+            <span class="title">wordpress</span>
+            <div class="skill-bar">
+              <span class="skill-per wordpress">
+                <span class="tool">85%</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <span class="title">photoshop</span>
+            <div class="skill-bar">
+              <span class="skill-per photoshop">
+                <span class="tool">80%</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <span class="title">figma</span>
+            <div class="skill-bar">
+              <span class="skill-per figma">
+                <span class="tool">90%</span>
+              </span>
+            </div>
+          </div>
+
+
+          
+
+        </div>
+       
+      </div> 
+       
+          
+         
+          
+      
+      
+      
+      
+      
+      
+      </div>
+      
+    
+
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+           <div id="Portfolio" style=" padding: 5%;">
+        <!-- MAIN (Center website) -->
+<div class="main">
+
+  
+  <hr>
+ 
+  <center><h2>PORTFOLIO</h2></center>
+
+  
+  <div id="myBtnContainer">
+    <center><button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('DEVELOPING')"> DEVELOPING</button>
+    <button class="btn" onclick="filterSelection('DESIGNING')">DESIGNING</button></center>
+    
+  </div>
+  
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column DEVELOPING">
+      <div class="content" style="background-color:black; color: black; height: 250px;">
+        <img src="images/html ss.png" alt="DEVELOPING" style= "width:100%" height="180px">
+        <center><p style="color: white;">HTML</p></center>
+       <div class="hello">
+        <center><button style="background-color:lightskyblue;" class="btn btn1"  onclick="livedemo"><a href="https://gondlusirisha.github.io/sirisha1-/" target="_blank">Live Demo</a></button>
+        <button style="background-color:lightskyblue;" class="btn btn2" onclick="Githublink"><a href="https://github.com/gondlusirisha/sirisha1-.git" target="_blank">Github Link</a></button></center>
+       
+      </div>
+        
+      </div>
+    </div>
+    <div class="column DEVELOPING">
+      <div class="content" style="background-color:black; color: black;height: 250px;">
+      <img src="images/javascript ss.png" alt="DEVELOPING" style="width:100%" height="180px">
+      <center><h4>javascript</h4></center>
+
+      <div class="hello" style="margin-bottom: 200px;">
+      <center><button style="background-color:lightskyblue;" class="btn btn1" onclick="livedemo"><a href="https://gondlusirisha.github.io/javascript/" target="_blank">Live Demo </a></button>
+        <button  style="background-color:lightskyblue;" class="btn btn2" onclick="Githublink"><a href="https://github.com/gondlusirisha/javascript.git" target="_blank">Github Link</a></buttom></center>
+      </div>
+        
+
+        
+      </div>
+    </div>
+    <div class="column DEVELOPING">
+      <div class="content" style="background-color:black; color: black;height:250px;">
+      <img src="images/react ss.png" alt="DEVELOPING" style="width:100%" height="180px">
+        <center><h4>React.js</h4></center>
+        <center><button  style="background-color:lightskyblue;" class="btn btn1"  onclick="livedemo"><a href=" https://gondlusirisha.github.io/react/" target="_blank">Live Demo </a></button>
+          <button style="background-color:lightskyblue;" class="btn btn2" onclick="Githublink"><a href="https://github.com/gondlusirisha/react.git" target="_blank">Github Link</a></button></center>
+        
+
+        
+      </div>
+    </div>
+    
+    <div class="column DESIGNING">
+      <div class="content" style="background-color:black; color: black;height: 250px;">
+        <img src="images/wordpress ss.png" alt="DESIGNING" style="width:100%" height="180px">
+        <center><button  style="background-color:lightskyblue;" class="btn btn1" onclick="livedemo"><a href="https://dev-sirisha1.pantheonsite.io/" target="_blank">Live Demo </a></button>
+          <button   style="background-color:lightskyblue;" class="btn btn2" onclick="Githublink"><a href="https://dev-sirisha1.pantheonsite.io/" target="_blank">Github Link</a></button></center>
+        
+        
+      </div>
+    </div>
+    <div class="column Designing">
+      <div class="content" style="background-color:black; color: black;height: 250px;">
+        
+          <img src="images/sports mockup.jpg" alt="sports"style="width: 275px; height: 180px;" >
+          <center><p style="color:black;"></p></center>
+          <center><button style="background-color:lightskyblue;" class="btn btn1" onclick="livedemo">
+            <a href="images/sports poster.jpg" target="_blank">Live Demo </a>
+            </button>
+        </center>
+        <center>
+          </div>
+        </a>
+      </div>
+      <div class="column Designing">
+        <div class="content" style="background-color:black; color: black;height: 250px;">
+          
+            <img src="images/poster2 mockup.jpg" alt="sports"style="width: 275px; height: 180px;" >
+            <center><p style="color:black;"></p></center>
+            <center><button style="background-color:lightskyblue;" class="btn btn1" onclick="livedemo">
+              <a href="images/poster2.jpg" target="_blank">Live Demo </a>
+              </button>
+          </center>
+          <center>
+            </div>
+          </a>
+        </div>
+        <div class="column Designing">
+          <div class="content" style="background-color:black; color: black;height: 250px;">
+            
+              <img src="images/mockup flyer1.jpg" alt="sports"style="width: 275px; height: 180px;" >
+              <center><p style="color:black;"></p></center>
+              <center><button style="background-color:lightskyblue;" class="btn btn1" onclick="livedemo">
+                <a href="images/siri flyer.jpg" target="_blank">Live Demo </a>
+                </button>
+            </center>
+            <center>
+              </div>
+            </a>
+          </div>
+          <div class="column Designing">
+            <div class="content" style="background-color:black; color: black;height: 250px;">
+              
+                <img src="images/mobile screens.jpg" alt="mobile screens"style="width: 275px; height: 180px;" >
+                <center><p style="color:black;"></p></center>
+                <center><button style="background-color:lightskyblue;" class="btn btn1" onclick="livedemo">
+                  <a href="https://www.figma.com/proto/OVvLmp0LUDsv9auuok6C9L/Untitled?node-id=136-2&t=BW14DbOL2dKXuSWd-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=136%3A2" target="_blank">Live Demo </a>
+                  </button>
+              </center>
+              <center>
+                </div>
+              </a>
+            </div>
+            <div class="column Designing">
+              <div class="content" style="background-color:black; color: black;height: 250px;">
+                
+                  <img src="images/siri web.jpg" alt="mobile screens"style="width: 275px; height: 180px;" >
+                  <center><p style="color:black;"></p></center>
+                  <center><button style="background-color:lightskyblue;" class="btn btn1" onclick="livedemo">
+                    <a href="https://www.figma.com/proto/r1nLF9fjlIX3EeSiEtMk8V/Untitled?t=BW14DbOL2dKXuSWd-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=52-2715&starting-point-node-id=52%3A2715" target="_blank">Live Demo </a>
+                    </button>
+                </center>
+                <center>
+                  </div>
+                </a>
+              </div>
+   
+  
+    
+  <!-- END GRID -->
+  </div>
+  
+  <!-- END MAIN -->
+  </div>
+  <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+    
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+    
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+    
+    
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+
+
+
+
+
+    const form = document.getElementById("form");
+const result = document.getElementById("result");
+
+form.addEventListener("submit", function (e) {
+  const formData = new FormData(form);
+  e.preventDefault();
+  var object = {};
+  formData.forEach((value, key) => {
+    object[key] = value;
+  });
+  var json = JSON.stringify(object);
+  result.innerHTML = "Please wait...";
+
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: json
+  })
+    .then(async (response) => {
+      let json = await response.json();
+      if (response.status == 200) {
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-green-500");
+      } else {
+        console.log(response);
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-red-500");
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+      result.innerHTML = "Something went wrong!";
+    })
+    .then(function () {
+      form.reset();
+      setTimeout(() => {
+        result.style.display = "none";
+      }, 5000);
+    });
+});
+
+    </script>
+     
+          
+</div>
+
+      <div id="Contact" style="padding: 5%;">
+      
+             <center> <h1>CONTACT</h1></center>
+
+              
+              
+             <div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
+              <div class="container mx-auto">
+                <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+                  <div class="text-center">
+                    <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+                      Contact Us
+                    </h1>
+                    <p class="text-gray-400 dark:text-gray-400">
+                      Fill up the form below to send us a message.
+                    </p>
+                  </div>
+                  <div class="m-7">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                      <input type="hidden" name="access_key" value="0cfa8e22-1d77-4600-bb4a-724d9885dbbb" />
+                      <input type="hidden" name="subject" value="0cfa8e22-1d77-4600-bb4a-724d9885dbbb" />
+                      <input type="checkbox" name="botcheck" id="" style="display: none;" />
+            
+                      <div class="mb-6">
+                        <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full Name</label>
+                        <input type="text" name="name" id="name" placeholder="John Doe" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                      </div>
+                      <div class="mb-6">
+                        <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                      </div>
+                      <div class="mb-6">
+                        <label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Phone Number</label>
+                        <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                      </div>
+                      <div class="mb-6">
+                        <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
+            
+                        <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+                      </div>
+                      <div class="mb-6">
+                        <button type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none" style="background-color: green;">
+                          <p style="color: black; height: 5px;">Submit</P>
+                        </button>
+                      </div>
+                      
+                      <p class="text-base text-center text-gray-400" id="result"></p>
+                   
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+        
+       
+      </div>
+    
+
+
+</body>
+</html>
